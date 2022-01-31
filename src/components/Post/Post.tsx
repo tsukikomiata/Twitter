@@ -11,9 +11,7 @@ import {NavLink} from "react-router-dom";
 import getRequest from "../../Requests/GetRequest";
 
 
-function Post(props: any) {
-
-    let {post, userWatching} = props
+function Post({post, userWatching}: {post: any, userWatching?: any}) {
 
     async function likeHandler(event: any) {
         if (userWatching === undefined) return 0;
@@ -44,7 +42,7 @@ function Post(props: any) {
                     <p className={styles.post__headerDisplayName}>{post.user.name}</p>
                     </NavLink>
                     {VerifiedIcon}
-                    <p className={styles.post__headerUsername}>{post.user.name}</p>
+                    <p className={styles.post__headerUsername}>@{post.user.tag}</p>
                     <span>·</span>
                     <p className={styles.post__headerTimeLeft}>{post.timeLeft}</p>
                     {moreIcon}

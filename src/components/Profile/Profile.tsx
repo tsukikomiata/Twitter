@@ -10,6 +10,7 @@ import React from "react";
 function Profile({user, slogan, place, site}: {user?: any, slogan?: any, place?: any, site?: any}) {
     let VerifiedIcon;
     VerifiedIcon = (user.verified) ? verifiedIcon : empty
+    let date = new Date(user.regDate)
 
     return (
         <div className={styles.profile}>
@@ -26,7 +27,7 @@ function Profile({user, slogan, place, site}: {user?: any, slogan?: any, place?:
                 <p className={styles.profileDisplayName}>{user.name}</p>
                 {VerifiedIcon}
             </div>
-            <p className={styles.profileUsername}>{user.tag}</p>
+            <p className={styles.profileUsername}>@{user.tag}</p>
             <p className={styles.profileSlogan}>{slogan}</p>
             <div className={styles.profile__addInfo}>
                 <div className={styles.profile__addInfo__item}>
@@ -39,7 +40,7 @@ function Profile({user, slogan, place, site}: {user?: any, slogan?: any, place?:
                 </div>
                 <div className={styles.profile__addInfo__item}>
                     {calendarIcon}
-                    <p className={styles.profile__addInfo__itemText}>{"Joined " + user.regDate}</p>
+                    <p className={styles.profile__addInfo__itemText}>{"Joined " + date.toDateString()}</p>
                 </div>
             </div>
             <div className={styles.profile__aboutFollow}>

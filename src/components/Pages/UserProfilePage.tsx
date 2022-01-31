@@ -10,11 +10,11 @@ import React, {useState} from "react";
 import getRequest from "../../Requests/GetRequest";
 
 const defaultTrends = [
-    {type: "Trending in Russia", title: "White Rabbit", count: "1.445"},
-    {type: "Trending in Russia", title: "White Rabbit", count: "1.445"},
-    {type: "Trending in Russia", title: "White Rabbit", count: "1.445"},
-    {type: "Trending in Russia", title: "White Rabbit", count: "1.445"},
-    {type: "Trending in Russia", title: "White Rabbit", count: "1.445"},
+    {type: "Trending in Russia", title: "Пухлый кролик", count: "1.445"},
+    {type: "Trending in Russia", title: "Пухлый кролик", count: "1.445"},
+    {type: "Trending in Russia", title: "Пухлый кролик", count: "1.445"},
+    {type: "Trending in Russia", title: "Пухлый кролик", count: "1.445"},
+    {type: "Trending in Russia", title: "Пухлый кролик", count: "1.445"},
 ]
 const defaultUser = {
     name: "name",

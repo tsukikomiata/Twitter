@@ -13,8 +13,8 @@ import getRequest from "../../Requests/GetRequest";
 
 
 const defaultUser = {
-        "name": "SLAVA MARLOW",
-        "tag": "slava",
+        "name": "Empty~",
+        "tag": "empty",
         "hashedPassword": "$2a$10$GP271GEIiW58ytFILI1gVO2dBRvHhDIgGgO0q4EW8nnolH5.LGgMa",
         "posts": [],
         "likedPosts": [],
@@ -22,26 +22,26 @@ const defaultUser = {
         "followers": [],
         "_id": "61f3797afc22fe235645dba2",
         "regDate": "2022-01-28T05:04:58.971Z",
-        "avatar": "https://cdn1.ozone.ru/s3/multimedia-3/c1200/6079430331.jpg",
-        "backgroundImage": "https://i.imgur.com/ZjCDTrc.png",
+        "avatar": "https://pbs.twimg.com/profile_images/1053797216698032130/AW12a1pq_400x400.jpg",
+        "backgroundImage": "https://pbs.twimg.com/profile_banners/987293652253720576/1540080303/1500x500",
         "__v": 0
     }
 
 
 const defaultTrends = [
-    {type: "Trending in Russia", title: "White Rabbit", count: "1.445"},
-    {type: "Trending in Russia", title: "White Rabbit", count: "1.445"},
-    {type: "Trending in Russia", title: "White Rabbit", count: "1.445"},
-    {type: "Trending in Russia", title: "White Rabbit", count: "1.445"},
-    {type: "Trending in Russia", title: "White Rabbit", count: "1.445"},
+    {type: "Trending in Russia", title: "Пухлый кролик", count: "1.445"},
+    {type: "Trending in Russia", title: "Пухлый кролик", count: "1.445"},
+    {type: "Trending in Russia", title: "Пухлый кролик", count: "1.445"},
+    {type: "Trending in Russia", title: "Пухлый кролик", count: "1.445"},
+    {type: "Trending in Russia", title: "Пухлый кролик", count: "1.445"},
 ]
 
 const defaultPosts = [
     {
         "post": {
             "user": {
-                "name": "SLAVA MARLOW",
-                "tag": "slava",
+                "name": "Empty~",
+                "tag": "empty",
                 "hashedPassword": "$2a$10$GP271GEIiW58ytFILI1gVO2dBRvHhDIgGgO0q4EW8nnolH5.LGgMa",
                 "posts": [],
                 "likedPosts": [],
@@ -49,13 +49,13 @@ const defaultPosts = [
                 "followers": [],
                 "_id": "61f3797afc22fe235645dba2",
                 "regDate": "2022-01-28T05:04:58.971Z",
-                "avatar": "https://cdn1.ozone.ru/s3/multimedia-3/c1200/6079430331.jpg",
+                "avatar": "https://pbs.twimg.com/profile_images/1053797216698032130/AW12a1pq_400x400.jpg",
                 "__v": 0
             },
-            "text": "ya prosnulsya",
-            "countComments": 12,
-            "countLikes": 11,
-            "countRetweets": 10,
+            "text": "Невероятно хочется кушать",
+            "countComments": 1,
+            "countLikes": 3,
+            "countRetweets": 1000,
             "isLiked": true,
             "timeLeft": "25m",
             "image": ""
@@ -64,7 +64,7 @@ const defaultPosts = [
 ]
 
 
-function ProfilePage() {
+function ProfilePage({user}: {user: any}) {
     const [filterPosts, setFilterPosts] = useState(defaultPosts)
     const [posts, setPosts] = useState(defaultPosts)
     const [trends, setTrends] = useState(defaultTrends)
@@ -79,14 +79,14 @@ function ProfilePage() {
 
     const Tweets = filterPosts.map((value) => {
         return (
-            <Post post={value.post}/>
+            <Post post={value.post} userWatching={user}/>
         );
     });
     return (
         <Layout item={"Profile"}>
-            <ProfileHeader tag={"TJ"}/>
+            <ProfileHeader tag={"Empty~"}/>
             <div className={styles.content}>
-                <Profile user={defaultUser} slogan={"чёта буквы"}
+                <Profile user={defaultUser} slogan={"вечно желающий спать пеликан"}
                 />
                 <ProfileTabBar posts={posts} setPosts={setFilterPosts}/>
                 {Tweets}

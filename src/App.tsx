@@ -71,7 +71,7 @@ function App() {
                     </RequireAuth>}/>
                     <Route path="/notifications" element={<NotificationsPage/>}/>
                     <Route path="/profile" element={<RequireAuth auth={auth} setAuthorised={setAuth} user={user}>
-                        <ProfilePage/>
+                        <ProfilePage user={user}/>
                     </RequireAuth>}/>
                     <Route path="/login" element={<RequireUnauth auth={auth} user={user} setAuthorised={setAuth}>
                         <Login setUser={setUser}/>

@@ -9,7 +9,7 @@ function profileHeader({tag}: {tag : string}) {
             {backArrowIcon}
             <div className={styles.profileHead__text}>
                 <p className={styles.profileHead__text_name}>{tag}</p>
-                <p className={styles.profileHead__text_tweets}>10 Tweets</p>
+                <p className={styles.profileHead__text_tweets}>1 Tweet</p>
             </div>
         </div>
     )

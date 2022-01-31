@@ -27,11 +27,11 @@ function layout({item, children}: {item?: any, children?: any}) {
         {icon: moreIcon, text: "More", path: "/more"}
     ]
     const trendsItems = [
-        {type: "Trending in Russia", title: "White Rabbit", count: "1.445"},
-        {type: "Trending in Russia", title: "White Rabbit", count: "1.445"},
-        {type: "Trending in Russia", title: "White Rabbit", count: "1.445"},
-        {type: "Trending in Russia", title: "White Rabbit", count: "1.445"},
-        {type: "Trending in Russia", title: "White Rabbit", count: "1.445"},
+        {type: "Trending in Russia", title: "Пухлый кролик", count: "1.445"},
+        {type: "Trending in Russia", title: "Пухлый кролик", count: "1.445"},
+        {type: "Trending in Russia", title: "Пухлый кролик", count: "1.445"},
+        {type: "Trending in Russia", title: "Пухлый кролик", count: "1.445"},
+        {type: "Trending in Russia", title: "Пухлый кролик", count: "1.445"},
     ]
     return (
         <div className={styles.layout}>

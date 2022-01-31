@@ -12,7 +12,7 @@ const UsersSchema = new Schema({
     following: [],
     followers: [],
     avatar: {type: String, default: "https://pbs.twimg.com/profile_images/1053797216698032130/AW12a1pq_400x400.jpg"},
-    backgroundImage: {type: String, default: "https://cdn1.ozone.ru/s3/multimedia-3/c1200/6079430331.jpg"},
+    backgroundImage: {type: String, default: "https://pbs.twimg.com/profile_banners/987293652253720576/1540080303/1500x500"},
     verified: Boolean,
     regDate: {type: Date, default: Date.now}
 })

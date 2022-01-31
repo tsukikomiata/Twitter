@@ -1,0 +1,18 @@
+body {
+    --twitter-color: #4eb3f3;
+    --twitter-background: #e6ecf0;
+}
+.app {
+    display: grid;
+    grid-template-areas: "sidebar tweetBox searchField"
+                            "sidebar tweetBox trends"
+                            "sidebar tweetBox trends"
+                            "sidebar post trends"
+                            "sidebar post trends"
+                            "profile profile profile"
+                            "profile profile profile";
+    grid-gap: 1vw;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}

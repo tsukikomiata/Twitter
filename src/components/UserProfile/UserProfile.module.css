@@ -1,0 +1,109 @@
+.userProfile {
+    grid-area: profile;
+    position: relative;
+    width:43vw;
+    border-right: 1px solid var(--twitter-background);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.userProfile__image {
+    width: 43vw;
+    height: 30vh;
+}
+
+.userProfile__header {
+    width: 40vw;
+}
+
+.userProfile__avatar {
+    border: 6px solid rgb(255, 255, 255);
+    border-radius: 9999px;
+    z-index: 1;
+    position: absolute;
+    top: 20vh;
+    left: 2vw;
+    width: 8vw;
+    background-color: white;
+}
+
+.userProfile__headerActions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.userProfile__headerActions__follow {
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: 700;
+    text-transform: inherit;
+    border-radius: 20px;
+    height: 45px;
+    width: 7vw;
+}
+
+.userProfile__mainName {
+    display: flex;
+    margin-top: 5vh;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+.userProfileDisplayName {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.userProfileUsername {
+    color: #777777;
+    font-weight: 500;
+    margin-left: 2vw;
+}
+
+.userProfile__addInfo {
+    display: flex;
+    margin-left: 2vw;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.userProfile__addInfo__item {
+    margin-right: 1vw;
+    display: flex;
+    align-items: center;
+    color: #777777;
+    font-weight: 500;
+}
+
+.userProfile__addInfo__itemText {
+    font-size: 15px;
+}
+
+.userProfile__aboutFollow {
+    display: flex;
+    align-items: center;
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+.userProfile__aboutFollow > p {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.userProfile__aboutFollow > span {
+    color: #777777;
+    margin-left: 0.2vw;
+    margin-right: 1vw;
+}
+
+.userProfile__followingsFromYours {
+    margin-left: 2vw;
+    margin-top: 2vh;
+    padding-bottom: 5vh;
+    font-size: 17px;
+}

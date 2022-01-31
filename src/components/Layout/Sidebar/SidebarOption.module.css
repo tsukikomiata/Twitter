@@ -1,0 +1,28 @@
+.sidebarOption, .sidebarOptionActive {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 1vh;
+}
+
+.sidebarOption:hover, .sidebarOptionActive:hover {
+    background-color: #efefef;
+    transition: color 100ms ease-out;
+}
+
+.sidebarOption__text, .sidebarOptionActive__text {
+    color: black;
+    font-weight: 350;
+    font-size: 25px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.sidebarOptionActive__text {
+    font-weight: 700;
+}
+
+.sidebarOptionActive > svg {
+    fill: black;
+}

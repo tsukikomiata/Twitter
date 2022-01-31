@@ -1,0 +1,22 @@
+.sidebar__twitterIcon {
+    fill: var(--twitter-color);
+    width: 40px;
+    padding-bottom: 2vh;
+}
+
+.sidebarOption__icon {
+    width: 25px;
+    padding-right: 1vw;
+    stroke: black;
+    stroke-width: 1;
+    stroke-linecap: round;
+}
+
+.sidebarOption__homeIcon, .sidebarOption__profileIcon, .sidebarOption__notificationsIcon {
+    width: 25px;
+    padding-right: 1vw;
+    stroke: black;
+    stroke-width: 2;
+    stroke-linecap: round;
+    fill: none;
+}

@@ -1,0 +1,14 @@
+.startIcon, .endIcon {
+    width: 20px;
+}
+
+.startIcon {
+    fill: var(--twitter-color);
+}
+
+.endIcon {
+    fill: white;
+    border-radius: 100px;
+    padding: 1vh;
+    background-color: var(--twitter-color);
+}

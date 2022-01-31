@@ -1,0 +1,5 @@
+.tweetBox__icon {
+    width: 20px;
+    fill: var(--twitter-color);
+    padding-right: 1vw;
+}

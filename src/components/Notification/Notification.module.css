@@ -1,0 +1,32 @@
+.notification {
+    display: flex;
+    flex-direction: column;
+    width: 39vw;
+    border-right: var(--twitter-background) 1px solid;
+    border-bottom: var(--twitter-background) 1px solid;
+    padding: 4vh 2vw 2vh;
+}
+
+.notification_avatar {
+    width: 50px;
+}
+
+.notification > p {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 3vh;
+}
+
+.notification_headText {
+    color: black;
+}
+
+.notification_headText > span {
+    font-weight: 700;
+}
+
+.notification_text, .notification_tag {
+    color: gray;
+    width: 40vw;
+}
+

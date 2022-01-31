@@ -1,0 +1,25 @@
+.post__verifiedIcon {
+    width: 15px;
+    fill: var(--twitter-color);
+    padding-left: 0.5vw;
+}
+
+.post__footerIcon {
+    width: 20px;
+    fill: #777777;
+}
+
+.post__headerMore {
+    padding-left: 21vw;
+    padding-right: 0;
+    width: 20px;
+    fill: #777777;
+}
+
+.post__likesIcon {
+    width: 20px;
+    fill: none;
+    stroke: #777777;
+    stroke-width: 2px;
+    stroke-linecap: round;
+}

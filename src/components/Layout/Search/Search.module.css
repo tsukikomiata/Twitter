@@ -1,0 +1,30 @@
+.searchForm {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding-bottom: 1vh;
+}
+
+.searchField {
+    group-area: searchField;
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    background-color: #f3f3f3;
+    width: 18vw;
+    border-radius: 25px;
+    margin-top: 1vh;
+    padding-left: 2vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+.searchField > input {
+    background-color: #f3f3f3;
+    border: none;
+}
+
+.searchField > input {
+    outline: none;
+}
+

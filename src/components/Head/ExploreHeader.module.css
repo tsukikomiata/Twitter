@@ -1,0 +1,13 @@
+.explore_header {
+    width: 42vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1vw;
+    border-right: var(--twitter-background) 1px solid;
+    border-bottom: var(--twitter-background) 1px solid;
+}
+
+.explore_header > form > div {
+    width: 32vw;
+}

@@ -1,0 +1,17 @@
+.usersOption {
+    display: flex;
+    align-items: flex-start;
+    font-size: 15px;
+    font-weight: 500;
+    justify-content: space-between;
+    padding: 2vh 2vw;
+}
+
+.usersOption_info {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.trendsOption__icon {
+    width: 20px;
+}

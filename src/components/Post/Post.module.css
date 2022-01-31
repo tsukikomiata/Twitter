@@ -1,0 +1,99 @@
+.post {
+    display: flex;
+    align-items: flex-start;
+    grid-area: post;
+    border-bottom: 1px solid var(--twitter-background);
+    width: 40vw;
+    margin-bottom: 5vh;
+    border-right: 1px solid var(--twitter-background);
+    padding: 2vh 1vw 5vh 2vw;
+}
+
+.post__content {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    padding-left: 1vw;
+}
+
+.post__header {
+    display: flex;
+    align-items: center;
+}
+
+.post__headerIcon {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.post__headerDisplayName {
+    font-weight: bold;
+}
+
+.post__verifiedIcon {
+    width: 15px;
+    fill: var(--twitter-color);
+    padding-left: 0.5vw;
+}
+
+.post__headerUsername {
+    color: #777777;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    font-weight: 450;
+}
+
+.post__header > span {
+    color: #777777;
+    font-weight: 450;
+}
+
+.post__headerTimeLeft {
+    color: #777777;
+    padding-left: 0.5vw;
+    font-weight: 450;
+}
+
+.post__text {
+    font-weight: 350;
+    padding-bottom: 5vh;
+}
+
+.post__image {
+    /*border-radius: 20px;*/
+}
+
+.disactivity {
+    display: none;
+}
+
+.post__footer {
+    margin-top: 2vh;
+    display: flex;
+}
+
+.post__footerItem, .post__likesItem {
+    display: flex;
+    margin-right: 8vw;
+    border: none;
+}
+
+.post__footerInfo {
+    color: #777777;
+    padding-left: 1vw;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.post__likesItem > p {
+    color: #c7154d;
+}
+
+.post__likesItem > svg {
+    fill: #c7154d;
+    stroke: none;
+}
+
+.post__navlink {
+    text-decoration: none;
+}

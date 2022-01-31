@@ -1,0 +1,95 @@
+.explore {
+    width: 42vw;
+    padding-right: 1vw;
+    border-right: var(--twitter-background) 1px solid;
+}
+
+ .explore > div {
+     grid-area: none;
+     width: 43vw;
+     background-color: white;
+     border-radius: 0;
+     margin: 0;
+     padding: 2vh 0;
+ }
+
+ .explore > div > header {
+     justify-content: space-between;
+     padding-left: 2vw;
+ }
+
+ .explore > div > header > svg {
+     display: none;
+ }
+
+ .explore > div > div {
+     padding-left: 2vw;
+ }
+
+ .explore > div > p {
+     padding-left: 2vw;
+     font-weight: 500;
+     font-size: 17px;
+ }
+
+ .explore__items {
+     padding-left: 1vw;
+ }
+
+ .startBlock, .endBlock {
+     width: 39vw;
+     display: flex;
+     justify-content: space-between;
+     padding: 2vh 2vw;
+     align-items: center;
+ }
+
+ .startBlock {
+     border-top: var(--twitter-background) 1px solid;
+ }
+
+ .endBlock {
+     border-bottom: var(--twitter-background) 1px solid;
+     padding-top: 0;
+ }
+
+ .startBlock > svg, .endBlock > svg {
+     width: 35px;
+ }
+
+.notificationsMark {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+}
+
+.notificationsMark > svg {
+    margin-right: 1vw;
+    height: 21px;
+}
+
+.notificationsMark > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.block_name, .block_subname {
+    font-size: 17px;
+}
+
+.block_subname {
+    color: gray;
+    font-weight: 600;
+}
+
+.blockButton {
+    background-color: white;
+    border: gray 1px solid;
+    color: black;
+    font-weight: 700;
+    text-transform: inherit;
+    border-radius: 20px;
+    height: 45px;
+    width: 7vw;
+    cursor: pointer;
+}

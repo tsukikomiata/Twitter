@@ -1,0 +1,48 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    margin-left: 37vw;
+    margin-top: 8vh;
+    padding: 2vh 3vw;
+    border: 1px solid var(--twitter-background);
+    border-radius: 10px;
+}
+
+.login__header {
+    display: flex;
+    width: 12vw;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2vw;
+}
+
+.login > input {
+    border: 1px solid var(--twitter-background);
+    margin-top: 3vh;
+    width: 15vw;
+    margin-left: 2.5vw;
+    padding: 1vh 1vw;
+    border-radius: 20px;
+}
+
+.login > input:focus {
+    border: 2px solid var(--twitter-color);
+    outline: none;
+}
+
+.login__button {
+    height: 4vh;
+    width: 15vw;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: var(--twitter-color);
+    margin-left: 3.5vw;
+    margin-top: 5vh;
+}
+
+.login__button:hover {
+    background-color: #3da3e2;
+    cursor: pointer;
+}

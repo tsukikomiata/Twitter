@@ -1,0 +1,117 @@
+.profile {
+    grid-area: profile;
+    position: relative;
+    width:43vw;
+    border-right: 1px solid var(--twitter-background);
+}
+
+.profile__image {
+    width: 43vw;
+}
+
+.profile__header {
+    width: 42vw;
+}
+
+.profile__avatar {
+    border: 6px solid rgb(255, 255, 255);
+    border-radius: 9999px;
+    z-index: 1;
+    position: absolute;
+    top: 20vh;
+    left: 2vw;
+    width: 8vw;
+}
+
+.profile__headerActions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.profile__headerActions__edit {
+    border: 1px solid var(--twitter-background);
+    background-color: white;
+    font-weight: 700;
+    text-transform: inherit;
+    border-radius: 20px;
+    height: 40px;
+    width: 8vw;
+}
+
+.profile__mainName {
+    display: flex;
+    margin-top: 5vh;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+.profileDisplayName {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.profileUsername {
+    color: #777777;
+    font-weight: 500;
+    margin-left: 2vw;
+}
+
+.profileSlogan {
+    margin-top: 2vh;
+    font-weight: 450;
+    margin-left: 2vw;
+}
+
+.profile__addInfo {
+    display: flex;
+    margin-left: 2vw;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.profile__addInfo__item {
+    margin-right: 1vw;
+    display: flex;
+    align-items: center;
+    color: #777777;
+    font-weight: 500;
+}
+
+.profile__addInfo__itemSite, .profile__addInfo__itemPlace, .profile__addInfo__itemText {
+    font-size: 15px;
+}
+
+.profile__addInfo__itemSite {
+    color: var(--twitter-color);
+}
+
+.profile__aboutFollow {
+    display: flex;
+    align-items: center;
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+.profile__aboutFollow > p {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.profile__aboutFollow > span {
+    color: #777777;
+    margin-left: 0.2vw;
+    margin-right: 1vw;
+}
+
+.profile__followingsFromYours {
+    margin-left: 2vw;
+    margin-top: 2vh;
+    padding-bottom: 5vh;
+    font-size: 17px;
+}
+
+.active {
+    color: black;
+}

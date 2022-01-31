@@ -1,0 +1,30 @@
+.users {
+    background-color: #f3f3f3;
+    width: 20vw;
+    border-radius: 20px;
+    grid-area: trends;
+    margin-right: 2vw;
+    height: 55vh;
+    padding-bottom: 2vh;
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 2vw;
+    align-items: center;
+}
+
+.header__title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.users__more {
+    padding-left: 2vw;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    color: var(--twitter-color);
+}

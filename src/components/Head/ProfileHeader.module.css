@@ -1,0 +1,32 @@
+.profileHead {
+    display: flex;
+    width: 40vw;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1vh 2vw 1vh 1vw;
+    grid-area: head;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-right: 1px solid var(--twitter-background);
+    border-bottom: 1px solid var(--twitter-background);
+    z-index: 2;
+}
+
+.profileHead__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2vw;
+}
+
+.profileHead__text_name {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.profileHead__text_tweets {
+    font-weight: 350;
+    font-size: 15px;
+    color: gray;
+}

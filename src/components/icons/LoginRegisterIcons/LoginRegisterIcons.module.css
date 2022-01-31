@@ -1,0 +1,12 @@
+.closeIcon {
+    width: 20px;
+}
+
+.closeIcon:hover {
+    cursor: pointer;
+}
+
+.twitterIcon {
+    width: 30px;
+    fill: var(--twitter-color);
+}

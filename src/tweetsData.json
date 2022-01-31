@@ -1,0 +1,42 @@
+[
+  {
+    "avatar": "images/1.jpg",
+    "displayName": "TJ",
+    "verified": true,
+    "username": "@tjournal",
+    "timeLeft": "25m",
+    "text": "«Твоё лицо совершенно такое же».Стоит ли покупать iPhone 13 mini, если у вас есть iPhone 12 mini? Много ли отличий? Редактор TJ провела неделю с новым смартфоном послегода использования предыдущей модели — и попыталась ощутить разницу",
+    "image": "../../images/2.jpg",
+    "countComments": "2",
+    "countLikes": "9",
+    "countRetweets": "12",
+    "isLiked": false
+  },
+  {
+    "avatar": "images/1.jpg",
+    "displayName": "TJ",
+    "verified": true,
+    "username": "@tjournal",
+    "timeLeft": "25m",
+    "text": "«Твоё лицо совершенно такое же».Стоит ли покупать iPhone 13 mini, если у вас есть iPhone 12 mini? Много ли отличий? Редактор TJ провела неделю с новым смартфоном послегода использования предыдущей модели — и попыталась ощутить разницу",
+    "image": "/images/2.jpg",
+    "countComments": "2",
+    "countLikes": "9",
+    "countRetweets": "5",
+    "isLiked": true
+  },
+  {
+    "avatar": "images/1.jpg",
+    "displayName": "TJ",
+    "verified": true,
+    "username": "@tjournal",
+    "timeLeft": "25m",
+    "text": "«Твоё лицо совершенно такое же».Стоит ли покупать iPhone 13 mini, если у вас есть iPhone 12 mini? Много ли отличий? Редактор TJ провела неделю с новым смартфоном послегода использования предыдущей модели — и попыталась ощутить разницу",
+    "image": "",
+    "countComments": "2",
+    "countLikes": "9",
+    "countRetweets": "2",
+    "isLiked": true
+  }
+]
+

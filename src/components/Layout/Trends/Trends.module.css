@@ -1,0 +1,36 @@
+.trends {
+    background-color: #f3f3f3;
+    width: 20vw;
+    border-radius: 20px;
+    grid-area: trends;
+    margin-right: 2vw;
+    height: 85vh;
+    padding-bottom: 2vh;
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    align-items: center;
+}
+
+.header__title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.trends__more {
+    padding-left: 2vw;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    color: var(--twitter-color);
+}
+
+
+/*.headerIcon {*/
+/*    width: 25px;*/
+/*}*/

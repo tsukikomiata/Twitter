@@ -1,0 +1,36 @@
+.sidebar {
+    border-right: 1px solid var(--twitter-background);
+    display: flex;
+    flex-direction: column;
+    height: 88vh;
+    justify-content: space-around;
+    width: 15vw;
+    padding: 2vh 2vw 10vh;
+    margin-left: 5vw;
+    grid-area: sidebar;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar__items {
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65vh;
+}
+
+.sidebar__tweetButton {
+    background-color: var(--twitter-color);
+    border: none;
+    color: white;
+    font-weight: 700;
+    text-transform: inherit;
+    border-radius: 20px;
+    height: 8vh;
+    font-size: 20px;
+}
+
+.sidebar__tweetButton:hover {
+    background-color: #3da3e2;
+}

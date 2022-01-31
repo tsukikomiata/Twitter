@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-bottom: var(--twitter-background) 1px solid;
+    border-right: var(--twitter-background) 1px solid;
+}
+
+.tab {
+    text-align: center;
+    flex-grow: 1;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.tab_title {
+    color: gray;
+    font-weight: normal;
+}
+
+.active_tab {
+    position: relative;
+}
+
+.active_tab > .tab_title {
+    color:black;
+    font-weight: bold;
+}
+
+.active_tab > .tab_title::after {
+    content: "";
+    background-color: var(--twitter-color);
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 50%;
+    border-radius: 1rem;
+    bottom: 0;
+    left: 25%;
+    text-align: center;
+}
+
+.tab:hover {
+    background-color: var(--twitter-background);
+}

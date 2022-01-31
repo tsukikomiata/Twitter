@@ -11,7 +11,7 @@ const UsersSchema = new Schema({
     likedPosts: [],
     following: [],
     followers: [],
-    avatar: {type: String, default: "https://cdn1.ozone.ru/s3/multimedia-3/c1200/6079430331.jpg"},
+    avatar: {type: String, default: "https://pbs.twimg.com/profile_images/1053797216698032130/AW12a1pq_400x400.jpg"},
     backgroundImage: {type: String, default: "https://cdn1.ozone.ru/s3/multimedia-3/c1200/6079430331.jpg"},
     verified: Boolean,
     regDate: {type: Date, default: Date.now}

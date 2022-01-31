@@ -39,7 +39,7 @@ function UserProfilePage() {
 
     return (
         <Layout item={""}>
-            <ProfileHeader login={user.name}/>
+            <ProfileHeader tag={user.name}/>
             <div className={styles.content}>
                 <UserProfile user={user}/>
             </div>

@@ -39,7 +39,7 @@ function ExplorePage() {
         <Layout item={"Explore"}>
             <ExploreHeader setPosts={setPosts}/>
             <div className={styles.content}>
-                <Explore props={posts} trend_props={trends.slice(0, 5)}/>
+                <Explore props={posts} trendProps={trends.slice(0, 5)}/>
             </div>
         </Layout>
     )

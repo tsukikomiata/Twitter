@@ -84,7 +84,7 @@ function ProfilePage() {
     });
     return (
         <Layout item={"Profile"}>
-            <ProfileHeader login={"TJ"}/>
+            <ProfileHeader tag={"TJ"}/>
             <div className={styles.content}>
                 <Profile user={defaultUser} slogan={"чёта буквы"}
                 />

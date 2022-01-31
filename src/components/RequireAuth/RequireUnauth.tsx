@@ -1,9 +1,9 @@
 import {Navigate} from "react-router";
 import React from "react";
 
-function RequireUnauth(children: any, props?: any) {
+function RequireUnauth(props?: any) {
 
-    let {auth, setAuthorised, user} = props
+    let {children, auth, setAuthorised, user} = props
 
     if (auth) {
         // @ts-ignore

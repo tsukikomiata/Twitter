@@ -16,7 +16,6 @@ dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
-const urlencodedParser = express.urlencoded({extended: false});
 
 const port = '8000';
 
@@ -24,16 +23,6 @@ const url = process.env.MONGO_URI
 
 // @ts-ignore
 mongoose.connect(url).then(res => console.log("Mongo connected"))
-
-app.get('/comment/:name', (req, res) => {
-    Comments.findOne({name: req.params.name}, (err?: any, comment?: any) => {
-        if (err) {
-            res.send('Comment not found')
-        } else {
-            res.send(comment)
-        }
-    })
-})
 
 
 app.use('/api/user', userRouter);

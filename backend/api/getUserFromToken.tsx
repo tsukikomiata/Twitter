@@ -13,8 +13,9 @@ router.post('/', (req: Request, res: any) => {
         const { token } = req.body;
     // @ts-ignore
         let user = jwt.verify(token, process.env.TOKEN_SECRET);
+        const tag = user.name
     if (user) {
-        Users.findOne({tag: user}, async (err?: any, user?: any) => {
+        Users.findOne({tag: tag}, async (err?: any, user?: any) => {
             if (err) {
                 res.status(500).send('Server error!!!!!!!');
             } else if (!user) {

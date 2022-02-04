@@ -12,8 +12,8 @@ import getRequest from "../../Requests/GetRequest";
 const defaultPosts = [
     {
             "user": {
-                "name": "SLAVA MARLOW",
-                "tag": "slava",
+                "name": "Cat",
+                "tag": "cat",
                 "hashedPassword": "$2a$10$GP271GEIiW58ytFILI1gVO2dBRvHhDIgGgO0q4EW8nnolH5.LGgMa",
                 "posts": [],
                 "likedPosts": [],
@@ -24,7 +24,7 @@ const defaultPosts = [
                 "verified": true,
                 "__v": 0
             },
-            "text": "ya prosnulsya",
+            "text": "хочу спать",
             "countComments": 12,
             "countLikes": 11,
             "countRetweets": 10,
@@ -45,26 +45,23 @@ const defaultTrends = [
 function HomePage({user}: {user: object}) {
     const [posts, setPosts] = useState(defaultPosts)
     const [trends, setTrends] = useState(defaultTrends)
-    const API_URL_trends = 'http://localhost:8000/trend'
-    const API_URL_posts = 'http://localhost:8000/api/post'
-
-
 
     useState(async () => {
-        const res = await getRequest(API_URL_posts)
-        console.log(res);
-        setPosts(res);
+        const resPosts = await getRequest("http://localhost:8000/api/post")
+        if (resPosts.success) setPosts(resPosts.post);
+        const resTrends = await getRequest("http://localhost:8000/api/trend")
+        if (resTrends.success) setTrends(resTrends.trends);
     })
 
     return (
         <Layout item={"Home"}>
             <HomeHeader/>
             <div className={styles.content}>
-                <TweetBox user={user}/>
-                {posts.map((option)=> <Post post={option} userWatching={user}/>)}
+                <TweetBox user={user} posts={posts} setPosts={setPosts}/>
+                {posts.slice(0).reverse().map((option) => <Post post={option} userWatching={user}/>)}
             </div>
             <Search setPosts={setPosts}/>
-            <Trends options={trends.slice(0, 5)}/>
+            <Trends options={trends}/>
         </Layout>
     )
 }

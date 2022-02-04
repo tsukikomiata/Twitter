@@ -23,14 +23,4 @@ router.get('/:tag', (req, res) => {
     })
 })
 
-router.get('likes/:tag', (req, res) => {
-    Users.findOne({tag: req.params.tag}, (err?: any, user?: any) => {
-        if (err) {
-            res.status(400).json({"success": false, "posts": []});
-        } else {
-            res.status(200).json({"success": true, "posts": user.likedPosts})
-        }
-    })
-})
-
 export default router

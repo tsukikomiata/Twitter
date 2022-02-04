@@ -23,7 +23,7 @@ router.post('/', async (req, res) => {
             res.status(500).send("Error while registering, please, try again")
         } else {
             const secret = process.env.TOKEN_SECRET;
-            const payload = { name };
+            const payload = { tag };
             // @ts-ignore
             const token = jwt.sign(payload, secret, {'expiresIn': '12h'});
             res.status(200).json({'token': token, 'user': user});

@@ -7,7 +7,7 @@ import optionsIcon from "../icons/PostIcons/MoreIcon"
 import React from "react";
 
 
-function explore({props, trendProps}: {props?: any, trendProps?: any}) {
+function explore({props, trendProps, user}: {props?: any, trendProps?: any, user?: any}) {
     return (
         <div className={styles.explore}>
             <Trends options={trendProps}/>
@@ -19,7 +19,7 @@ function explore({props, trendProps}: {props?: any, trendProps?: any}) {
                 {optionsIcon}
             </header>
             <div className={styles.explore__items}>
-                {props.map((option?: any)=> <Post post={option.post}/>)}
+                {props.map((option?: any)=> <Post post={option} userWatching={user}/>)}
             </div>
             <nav className={styles.endBlock}>
                 <div className={styles.notificationsMark}>

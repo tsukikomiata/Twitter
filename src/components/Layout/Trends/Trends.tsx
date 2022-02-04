@@ -3,7 +3,7 @@ import TrendsOption from "./TrendsOption";
 import headerIcon from "../../icons/TrendsIcons/HeaderIcon";
 import React from "react";
 
-function Trends({options}: {options?: any}) {
+function Trends({options}: {options: any}) {
     return (
         <div className={styles.trends}>
             <header>

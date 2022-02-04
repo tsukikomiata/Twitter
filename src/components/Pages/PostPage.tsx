@@ -11,8 +11,8 @@ import getRequest from "../../Requests/GetRequest";
 const defaultPost =
     {
         "user": {
-            "name": "SLAVA MARLOW",
-            "tag": "slava",
+            "name": "Cat",
+            "tag": "cat",
             "hashedPassword": "$2a$10$GP271GEIiW58ytFILI1gVO2dBRvHhDIgGgO0q4EW8nnolH5.LGgMa",
             "posts": [],
             "likedPosts": [],
@@ -22,7 +22,7 @@ const defaultPost =
             "regDate": "2022-01-28T05:04:58.971Z",
             "__v": 0
         },
-        "text": "ya prosnulsya",
+        "text": "хочу спать",
         "countComments": 12,
         "countLikes": 11,
         "countRetweets": 10,

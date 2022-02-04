@@ -7,34 +7,21 @@ import smileIcon from "../icons/TweetBoxIcon/SmileIcon"
 import calendarIcon from "../icons/TweetBoxIcon/CalendarIcon"
 import postRequest from "../../Requests/PostRequest"
 
-const defaultData = {
-    id: 9,
-    avatar: "../../images/1.jpg",
-    displayName: "displayName",
-    verified: false,
-    username: "username",
-    timeLeft: "0",
-    countComments: 0,
-    countLikes: 0,
-    countRetweets: 0,
-    isLiked: false
-}
-
-function TweetBox({user}: {user: any}) {
-    const tweetPostRequest = (event?: any) => {
-        console.log(event.target.elements.image.value)
+function TweetBox({user, posts, setPosts}: {user: any, posts: any, setPosts: any}) {
+    const tweetPostRequest = async (event?: any) => {
         event.preventDefault()
         const data = {
+            user: user,
             timeLeft: "0",
             text: event.target.elements.text.value,
-            image: "",
             countComments: 0,
             countLikes: 0,
-            countRetweets: 0,
-            isLiked: false
+            countRetweets: 0
         }
         if (data.text) {
-            postRequest(data, "https://localhost:8000/api/post")
+            const post = await postRequest(data, "http://localhost:8000/api/post");
+            const newPosts = [...posts, post.post];
+            setPosts(newPosts);
             event.target.elements.text.value = ""
         }
     }

@@ -7,7 +7,7 @@ import Layout from "../Layout/Layout";
 import Search from "../Layout/Search/Search";
 import Trends from "../Layout/Trends/Trends";
 import ProfileTabBar from "../Profile/ProfileTabBar";
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import Post from "../Post/Post";
 import getRequest from "../../Requests/GetRequest";
 
@@ -68,26 +68,31 @@ function ProfilePage({user}: {user: any}) {
     const [filterPosts, setFilterPosts] = useState(defaultPosts)
     const [posts, setPosts] = useState(defaultPosts)
     const [trends, setTrends] = useState(defaultTrends)
-    const API_URL_trends = 'http://localhost:8000/trend'
-    const API_URL_posts = 'http://localhost:8000/post'
 
-    useState(() => {
-        // getRequest(defaultPosts, setPosts, API_URL_posts)
-        // getRequest(defaultPosts, setFilterPosts, API_URL_posts)
-        // getRequest(defaultTrends, setTrends, API_URL_trends)
+    useEffect(() => {
+        let isMounted = true;
+        const getAll = async () => {
+            const resPost = await getRequest('http://localhost:8000/api/post');
+            if (isMounted) setPosts(resPost.post);
+            if (isMounted) setFilterPosts(resPost.post);
+            const resTrends = await getRequest('http://localhost:8000/api/trend');
+            if (isMounted) setTrends(resTrends.trends);
+        }
+
+        getAll();
+        return () => {isMounted = false}
     })
 
-    const Tweets = filterPosts.map((value) => {
+    const Tweets = filterPosts.slice(0).reverse().map((value) => {
         return (
-            <Post post={value.post} userWatching={user}/>
+            <Post post={value} userWatching={user}/>
         );
     });
     return (
         <Layout item={"Profile"}>
             <ProfileHeader tag={"Empty~"}/>
             <div className={styles.content}>
-                <Profile user={defaultUser} slogan={"вечно желающий спать пеликан"}
-                />
+                <Profile user={user} slogan={"вечно желающий спать пеликан"}/>
                 <ProfileTabBar posts={posts} setPosts={setFilterPosts}/>
                 {Tweets}
             </div>

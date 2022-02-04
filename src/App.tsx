@@ -43,11 +43,11 @@ function App() {
             try {
                 const res = await verifyUser(localStorage.getItem('token'));
                 if (!cleanupFunc) {
-                    auth = (res !== null && res !== undefined && res);
-                    setAuth(res !== null && res !== undefined && res);
+                    auth = !!res?.user;
+                    setAuth(auth);
                 }
                 if (auth) {
-                    user = res?.user;
+                    user = res.user;
                     setUser(user);
                 }
             } catch (e) {
@@ -67,7 +67,7 @@ function App() {
                         <HomePage user={defaultUser}/>
                     </RequireAuth>}/>
                     <Route path="/explore" element={<RequireAuth auth={auth} setAuthorised={setAuth} user={user}>
-                        <ExplorePage/>
+                        <ExplorePage user={user}/>
                     </RequireAuth>}/>
                     <Route path="/notifications" element={<NotificationsPage/>}/>
                     <Route path="/profile" element={<RequireAuth auth={auth} setAuthorised={setAuth} user={user}>

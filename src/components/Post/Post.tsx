@@ -33,34 +33,34 @@ function Post({post, userWatching}: {post: any, userWatching?: any}) {
     likesClass = post in userWatching.likedPosts ? styles.post__likesItem : styles.post__footerItem;
     return (
         <div className={styles.post}>
-            <NavLink to={"/user/"+post.user.tag} className={styles.post__navlink}>
-            <img src={post.user.avatar} alt="avatar" className={styles.post__headerIcon}/>
+            <NavLink to={"/user/"+post?.user?.tag} className={styles.post__navlink}>
+            <img src={post?.user?.avatar} alt="avatar" className={styles.post__headerIcon}/>
             </NavLink>
             <div className={styles.post__content}>
                 <div className={styles.post__header}>
-                    <NavLink to={"/user/"+post.user.tag} className={styles.post__navlink}>
-                    <p className={styles.post__headerDisplayName}>{post.user.name}</p>
+                    <NavLink to={"/user/"+post?.user?.tag} className={styles.post__navlink}>
+                    <p className={styles.post__headerDisplayName}>{post?.user?.name}</p>
                     </NavLink>
                     {VerifiedIcon}
-                    <p className={styles.post__headerUsername}>@{post.user.tag}</p>
+                    <p className={styles.post__headerUsername}>@{post?.user?.tag}</p>
                     <span>·</span>
-                    <p className={styles.post__headerTimeLeft}>{post.timeLeft}</p>
+                    <p className={styles.post__headerTimeLeft}>{post?.timeLeft}</p>
                     {moreIcon}
                 </div>
-                <p className={styles.post__text}>{post.text}</p>
-                {post.image && <img src={post.image} alt="content" className={styles.post__image}/>}
+                <p className={styles.post__text}>{post?.text}</p>
+                {post?.image && <img src={post?.image} alt="content" className={styles.post__image}/>}
                 <div className={styles.post__footer}>
                     <div className={styles.post__footerItem}>
                         {commentIcon}
-                        <p className={styles.post__footerInfo}>{post.countComments}</p>
+                        <p className={styles.post__footerInfo}>{post?.countComments}</p>
                     </div>
                     <div className={styles.post__footerItem}>
                         {retweetsIcon}
-                        <p className={styles.post__footerInfo}>{post.countRetweets}</p>
+                        <p className={styles.post__footerInfo}>{post?.countRetweets}</p>
                     </div>
                     <button className={likesClass} onClick={likeHandler}>
                         {likesIcon}
-                        <p className={styles.post__footerInfo} id="likesInfo">{post.countLikes}</p>
+                        <p className={styles.post__footerInfo} id="likesInfo">{post?.countLikes}</p>
                     </button>
                     <div className={styles.post__footerItem}>
                         {shareIcon}
